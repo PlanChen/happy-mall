@@ -1,0 +1,30 @@
+package ${package}.${moduleName}.dto;
+
+import io.swagger.annotations.ApiModelProperty;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
+import java.io.Serializable;
+import java.util.Date;
+
+
+/**
+ * ${comments}数据传输对象
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public class ${className}Vo implements Serializable {
+
+    public static final long serialVersionUID = 1L;
+
+#foreach ($column in $columns)
+    @ApiModelProperty(value = "$column.comments")
+    public $column.attrType $column.attrname;
+#end
+
+    @Override
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this);
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.happymall.modules.order.dao.ShopOrderItemsDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="cn.happymall.modules.order.entity.ShopOrderItemsEntity" id="shopOrderItemsMap">
+        <result property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="commodityId" column="commodity_id"/>
+        <result property="goodsName" column="goods_name"/>
+        <result property="goodsSn" column="goods_sn"/>
+        <result property="productId" column="product_id"/>
+        <result property="number" column="number"/>
+        <result property="marketPrice" column="market_price"/>
+        <result property="retailPrice" column="retail_price"/>
+        <result property="goodsSpecifitionNameValue" column="goods_specifition_name_value"/>
+        <result property="isReal" column="is_real"/>
+        <result property="goodsSpecifitionIds" column="goods_specifition_ids"/>
+        <result property="listPicUrl" column="list_pic_url"/>
+    </resultMap>
+
+
+</mapper>

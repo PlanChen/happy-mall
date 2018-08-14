@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.happymall.modules.user.dao.UserLoginLogDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="cn.happymall.modules.user.entity.UserLoginLogEntity" id="userLoginLogMap">
+        <result property="id" column="id"/>
+        <result property="loginIp" column="login_ip"/>
+        <result property="loginTime" column="login_time"/>
+    </resultMap>
+
+
+</mapper>

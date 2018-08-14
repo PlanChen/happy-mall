@@ -1,0 +1,17 @@
+package ${package}.${moduleName}.dto;
+
+import io.swagger.annotations.ApiModelProperty;
+
+import cn.happymall.common.utils.BaseQueryBean;
+
+
+/**
+ * ${comments}查询条件对象
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public class ${className}QueryBean extends BaseQueryBean {
+
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.happymall.modules.order.dao.ShopOrderDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="cn.happymall.modules.order.entity.ShopOrderEntity" id="shopOrderMap">
+        <result property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="memberId" column="member_id"/>
+        <result property="orderStatus" column="order_status"/>
+        <result property="shippingStatus" column="shipping_status"/>
+        <result property="payStatus" column="pay_status"/>
+        <result property="consignee" column="consignee"/>
+        <result property="country" column="country"/>
+        <result property="province" column="province"/>
+        <result property="city" column="city"/>
+        <result property="district" column="district"/>
+        <result property="address" column="address"/>
+        <result property="mobile" column="mobile"/>
+        <result property="postscript" column="postscript"/>
+        <result property="shippingId" column="shipping_id"/>
+        <result property="shippingName" column="shipping_name"/>
+        <result property="payId" column="pay_id"/>
+        <result property="payName" column="pay_name"/>
+        <result property="shippingFee" column="shipping_fee"/>
+        <result property="actualPrice" column="actual_price"/>
+        <result property="integral" column="integral"/>
+        <result property="integralMoney" column="integral_money"/>
+        <result property="orderPrice" column="order_price"/>
+        <result property="commodityPrice" column="commodity_price"/>
+        <result property="addTime" column="add_time"/>
+        <result property="confirmTime" column="confirm_time"/>
+        <result property="payTime" column="pay_time"/>
+        <result property="freightPrice" column="freight_price"/>
+        <result property="couponId" column="coupon_id"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="couponPrice" column="coupon_price"/>
+        <result property="callbackStatus" column="callback_status"/>
+        <result property="fullCutPrice" column="full_cut_price"/>
+        <result property="orderType" column="order_type"/>
+    </resultMap>
+
+
+</mapper>

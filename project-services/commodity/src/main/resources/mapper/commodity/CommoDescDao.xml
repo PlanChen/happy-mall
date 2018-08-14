@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.happymall.modules.commodity.dao.CommoDescDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="cn.happymall.modules.commodity.entity.CommoDescEntity" id="commoDescMap">
+        <result property="commoId" column="commo_id"/>
+        <result property="commoDesc" column="commo_desc"/>
+        <result property="created" column="created"/>
+        <result property="updated" column="updated"/>
+    </resultMap>
+
+
+</mapper>
